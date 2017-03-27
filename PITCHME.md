@@ -66,9 +66,7 @@ $> npm test
 
 ### HINTS 2
 
-If you install dependencies to run from your scripts (webpack, cucumber, mocha, etc), you don't need to specify the complete path in the script, as `node_modules/.bin` is already on the $PATH of the running script.
-
-Example: 
+Remember that `./node_modules/.bin` is already in the running script $PATH. Don't write it in your `package.json`. Example: 
 
 ```js
 {
@@ -79,6 +77,11 @@ Example:
 }
 
 ``` 
+
+### HINTS 3
+
+ - Avoid using global packages, install all as a local dependency and run commands through an npm script. 
+ - You can also add `./node_modules/.bin/` to your $PATH and run commands as if they were global, but it'll always check for a local version first. 
 
 ---
 
@@ -114,6 +117,12 @@ About to write to package.json:
     "description": "This package is awesome"
 }
 ``` 
+
++++ 
+
+### Enhance your `package.json` 
+
+- Read all that can do with your [package.json](https://docs.npmjs.com/files/package.json)
 
 --- 
 
