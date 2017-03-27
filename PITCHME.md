@@ -61,7 +61,6 @@ $> npm test
 
 - All npm scripts have a "pre" and "post" stage. So if you create `task1`, npm will check `package.json` for a  `pretask1` and `posttask1` scripts and run them if anyone is present.
 
-
 +++ 
 
 ### HINTS 2
@@ -77,6 +76,8 @@ Remember that `./node_modules/.bin` is already in the running script $PATH. Don'
 }
 
 ``` 
+
++++ 
 
 ### HINTS 3
 
