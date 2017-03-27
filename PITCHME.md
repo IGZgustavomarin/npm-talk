@@ -1,8 +1,7 @@
 ---
 
-![NPM](assets/npm-logo.png)
 ## Mastering NPM
-
+![NPM](assets/npm-logo.png)
 
 --- 
 
@@ -12,10 +11,28 @@
 
 ### Everyday commands
 
-- `npm install <module_name> --save  (-S)`
-  - install a new packages and adds it to `package.json`
-- `npm install <module_name> --save-dev (-D)` 
-  - install a new development packages and adds it to `package.json`
+```
+$> npm install <module_name> --save  (-S)
+# install a new packages and adds it to `package.json
+
+$> npm install <module_name> --save-dev (-D) 
+# install a new development packages and adds it to `package.json
+``` 
+
++++ 
+
+#### HINTS 1
+
+- Use `-E` to save exact versions of packages
+- Or setup `npm` to do it by default: 
+
+```
+$> npm config set save-exact=true
+$> cat ~/.npmrc
+```
+
+### Running default scripts 
+
 - `npm start`
   - default npm-script in `package.json` to start your project.
 - `npm test`
@@ -23,7 +40,7 @@
 
 +++
 
-### Less known/used commands
+### Running other scripts
 
 - `npm run`
   - shows all your npm-scripts in `package.json`
