@@ -47,7 +47,8 @@ $> npm run <script-name>
 
 ### Special scripts
 
-`start` and `test` are special scripts that doesn't need the `run` parameter. These scripts are commonly used to run your project or run your test suites respectively.
+- ```start``` and `test` are special scripts that doesn't need the `run` parameter. 
+- These scripts are commonly used to run your project or run your test suites respectively.
 
 ```
 $> npm start  # same as npm run start
