@@ -14,4 +14,5 @@ Some references:
  - https://blog.risingstack.com/nodejs-at-scale-npm-best-practices/
  - https://github.com/mattdesl/module-best-practices
  - https://gist.github.com/AvnerCohen/4051934
+ - https://devcenter.heroku.com/articles/node-best-practices
  
