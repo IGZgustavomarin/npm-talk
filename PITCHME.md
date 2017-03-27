@@ -11,10 +11,11 @@
 
 ### Everyday commands
 
-```
+```sh
 $> npm install <module_name> --save  (-S)
 # install a new packages and adds it to `package.json
-
+```
+```sh
 $> npm install <module_name> --save-dev (-D) 
 # install a new development packages and adds it to `package.json
 ``` 
@@ -23,7 +24,7 @@ $> npm install <module_name> --save-dev (-D)
 
 #### HINTS 1
 
-- Use `-E` to save exact versions of packages
+- Use `--save-exact` (or `-E`) to save exact versions of a package
 - Or setup `npm` to do it by default: 
 
 ```
@@ -31,22 +32,27 @@ $> npm config set save-exact=true
 $> cat ~/.npmrc
 ```
 
-### Running default scripts 
++++
 
-- `npm start`
-  - default npm-script in `package.json` to start your project.
-- `npm test`
-  - default npm-script in `package.json` to test your project.
+### Running npm  scripts 
+
+You can create all your scripts inside `package.json` to run with a npm command: 
+
+```sh
+$> npm run <script-name>
+# run a script from package.json named "script-name" 
+``` 
 
 +++
 
-### Running other scripts
+### Special scripts
 
-- `npm run`
-  - shows all your npm-scripts in `package.json`
-- `npm run <script-name>`
-  - run a different script than `start` or `test`
-  
+`start` and `test` are special scripts that doesn't need the `run` parameter. These scripts are commonly used to run your project or run your test suites respectively.
+
+```
+$> npm start  # same as npm run start
+$> npm test
+``` 
 
 --- 
 
