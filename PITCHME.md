@@ -174,7 +174,6 @@ About to write to package.json:
    - Bug Fixes -> `npm version patch`
  - Create a CHANGELOG.md to update all  
 
- 
 +++ 
 
 ### HINTS 4
@@ -190,6 +189,7 @@ $> npm prune (--production)
 ```
 - Automate your dependencies on CD/CI with tools like [greenkeeper.io](https://greenkeeper.io/) or [renovate](https://github.com/singapore/renovate)
 - Use exact version as dependencies (not ^ or ~)
+
 --- 
 
 ## Private & Scoped modules
@@ -202,13 +202,13 @@ $> npm prune (--production)
 
 ### Private NPM registry
 
- - Create a [verdaccio](https://github.com/verdaccio/verdaccio) to handle a specific scope
+ - Create a [verdaccio](https://github.com/verdaccio/verdaccio) instance to handle a specific scope, ex: @igz
  - Update your `.npmrc` with your scope
  ```
  //npm.igz.es/:_authToken="YOUR_NPM_ACCESS_TOKEN"
  @igz:registry=https://npm.igz.es/
  ```
- - Now you can publish/install `@igz/my-awesome-package` as a private package.
+ - Now you can publish/install `@igz/my-awesome-package` as a private module.
  
 --- 
 
