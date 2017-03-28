@@ -160,6 +160,9 @@ About to write to package.json:
  $> cd my-package-folder
  $> npm link
  # this will enable your package to install it globally on your system
+ ```
+ - Noy you can install it elsewhere in your system
+ ```
  $> cd another-folder-to-test-your-module
  $> npm link my-awesome-package
  # your package is installed and you can edit it and see changes here
