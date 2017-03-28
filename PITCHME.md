@@ -8,8 +8,7 @@
 # Agenda
 
 - Basic usage
-- Create and publish modules
-- Module maintenance
+- Create, publish & mantain modules
 - Private & scoped modules
 
 --- 
@@ -132,19 +131,44 @@ About to write to package.json:
 
 ### Enhance your `package.json` 
 
-- Read all that can do with your [package.json](https://docs.npmjs.com/files/package.json)
+ - Check that you have all basic properties:
+   - name, description, author
+   - repository
+   - license (for public packages) [OSS Licenses](https://opensource.org/licenses/)
+ - Always add at least `start` and `test` script.
+ - Add a README.md with basic usage information.
+ - Read all that can do with your [package.json](https://docs.npmjs.com/files/package.json)
 
 +++ 
 
---- 
+### Dependency management
 
-## Module maintenance
+ - You can install normal dependencies and/or development dependencies.
+ - Check carefully which one belongs to `dependency` or `devDependency`
+ - devDependencies won't be installed when a thirdparty install your module.
+ - devDependencies won't be installed if you use `--production` during install.
 
++++
+
+### Link your package to test
+
+ - During development you can "live" test your package with `npm link`
+ 
+ ```
+ $> cd my-package-folder
+ $> npm link
+ # this will enable your package to install it globally on your system
+ $> cd another-folder-to-test-your-module
+ $> npm link my-awesome-package
+ # your package is installed and you can edit it and see changes here
+ ```
+ 
 --- 
 
 ## Private & Scoped modules
 
-
+ - NPM Orgs provide private packages, but is a paid solution.
+ - 
 
 --- 
 
