@@ -162,13 +162,30 @@ About to write to package.json:
  $> npm link my-awesome-package
  # your package is installed and you can edit it and see changes here
  ```
- 
+
++++
+
+### HINTS 4
+
+- Always check for outdated dependencies
+```
+$> npm outdated --depth=0 -l 
+```
+- Prune your dependencies before testing/publishing
+```
+$> npm prune (--production)
+# removes all deps installed not specified on package.json 
+```
+- Automate your dependencies on CD/CI with tools like [greenkeeper.io](https://greenkeeper.io/) or [renovate](https://github.com/singapore/renovate)
+
 --- 
 
 ## Private & Scoped modules
 
  - NPM Orgs provide private packages, but is a paid solution.
- - 
+ - If you already have a Nexus manager, use that
+ - Use OSS alternatvie like [verdaccio](https://github.com/verdaccio/verdaccio)
+
 
 --- 
 
