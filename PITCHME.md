@@ -102,7 +102,9 @@ Remember that `./node_modules/.bin` is already in the running script $PATH. Don'
 
 - Create an empty folder
 - Don't create a `package.json` manually
-- Use npm to setup your `package.json`
+- Use `npm init` to setup your `package.json`
+
++++
 
 ```sh
 $> npm init -y 
