@@ -5,7 +5,16 @@
 
 --- 
 
-## But first, the basis
+# Agenda
+
+- Basic usage
+- Create and publish modules
+- Module maintenance
+- Private & scoped modules
+
+--- 
+
+## Basic usage
 
 +++
 
@@ -34,7 +43,7 @@ $> cat ~/.npmrc
 
 +++
 
-### Running npm  scripts 
+### Running npm scripts 
 
 You can create all your scripts inside `package.json` to run with a npm command: 
 
@@ -86,7 +95,7 @@ Remember that `./node_modules/.bin` is already in the running script $PATH. Don'
 
 ---
 
-## Creating a new module
+## Create and publish modules
 
 +++
 
@@ -124,6 +133,18 @@ About to write to package.json:
 ### Enhance your `package.json` 
 
 - Read all that can do with your [package.json](https://docs.npmjs.com/files/package.json)
+
++++ 
+
+--- 
+
+## Module maintenance
+
+--- 
+
+## Private & Scoped modules
+
+
 
 --- 
 
